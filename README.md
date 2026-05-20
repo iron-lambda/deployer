@@ -1,4 +1,4 @@
-# racket-deployer
+# deployer
 
 A lightweight, high-performance CI/CD webhook server written in **Racket**.
 
@@ -68,8 +68,8 @@ Web Server:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/racket-deployer.git
-cd racket-deployer
+git clone https://github.com/yourusername/deployer.git
+cd deployer
 ```
 
 ### 2. Configure
@@ -124,7 +124,7 @@ npm run build  # Test build
 ### 4. Run
 
 ```bash
-cd racket-deployer
+cd deployer
 racket main.rkt
 ```
 
@@ -259,9 +259,9 @@ After=network.target
 Type=simple
 User=youruser
 Group=youruser
-WorkingDirectory=/home/youruser/racket-deployer
+WorkingDirectory=/home/youruser/deployer
 Environment="PATH=/usr/bin:/bin:/usr/local/bin"
-ExecStart=/usr/bin/racket /home/youruser/racket-deployer/main.rkt
+ExecStart=/usr/bin/racket /home/youruser/deployer/main.rkt
 Restart=always
 RestartSec=10
 StandardOutput=append:/var/log/blog-deploy.log
@@ -314,7 +314,7 @@ curl http://localhost:8080/health
 sudo journalctl -u blog-deploy -n 50
 
 # Test manually
-cd ~/racket-deployer
+cd ~/deployer
 racket main.rkt
 ```
 
@@ -411,8 +411,8 @@ MIT License - free to use for personal or commercial purposes.
 
 ## 📮 Support
 
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/racket-deployer/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/racket-deployer/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/deployer/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/deployer/discussions)
 
 ---
 
