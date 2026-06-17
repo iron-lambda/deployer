@@ -1,5 +1,7 @@
 # Deployer
 
+[![Language](https://img.shields.io/badge/language-Racket-red)] [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
+
 [English](README.md) | [中文](README.zh-CN.md)
 
 A lightweight, high-performance CI/CD webhook server written in Racket. Designed as a self-hosted alternative for **Obsidian Digital Garden** users who want to move off Vercel and deploy on their own VPS.
